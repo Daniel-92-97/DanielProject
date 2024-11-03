@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%);
+}
+
+.container-form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    margin-top: 6rem;
+
+}
+
+.form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+
+.form>h1 {
+    text-align: center;
+    font: normal normal normal 160px/231px Satisfy;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.form>h2 {
+    text-align: center;
+    font: normal normal normal 32px/38px Varela Round;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.form>p {
+    text-align: center;
+    font: normal normal normal 16px/20px Varela Round;
+    letter-spacing: 0px;
+    color: #F9F9F9;
+}
+
+.form-control {
+    display: flex;
+  gap: 20px;
+}
+
+label {
+
+    width: 150px;
+    height: 50px;
+text-align: right;
+font: normal normal normal 16px/20px Varela Round;
+color: #F9F9F9;
+}
+
+input {
+  
+    width: 300px;
+    height: 30px;
+
+    background: #F6F6F624 0% 0% no-repeat padding-box;
+        border: 2px solid #FFFFFF;
+       
+}
+
+button{
+ width: 20%;
+ height: 35px; 
+position: relative;
+ top: 17px;
+ right: 120px;
+
+    border: none;
+    
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+
+
+
+
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .form>h1 {
+        font-size: 80px;
+        /* Уменьшаем размер заголовка */
+        line-height: 100px;
+    }
+
+    .form>h2 {
+        font-size: 24px;
+        /* Уменьшаем размер подзаголовка */
+        line-height: 30px;
+    }
+
+    .form>p {
+        font-size: 14px;
+        /* Уменьшаем размер текста */
+    }
+
+    .form-control {
+        flex-direction: column;
+        /* Размещаем элементы вертикально */
+        gap: 10px;
+    }
+
+    label {
+        text-align: left;
+        /* Выравниваем текст по левому краю */
+        width: auto;
+        /* Даем метке динамическую ширину */
+    }
+
+    input {
+        width: 100%;
+        /* Поля ввода занимают всю ширину */
+    }
+
+    button {
+        width: 100%;
+        right: 0;
+        top: 10px;
+        /* Выравниваем кнопку внизу */
+    }
+}

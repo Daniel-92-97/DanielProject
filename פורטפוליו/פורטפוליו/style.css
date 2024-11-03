@@ -1,0 +1,64 @@
+body{
+    background-image: url(./image/_.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:auto;
+}
+
+#h3{
+    padding: 100px;
+    margin-top: 150px;
+    background-color: rgba(0, 128, 0, 0.248);
+    border-radius: 100px;
+    text-align: center;
+
+}
+
+ .icon-link{
+   
+    
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 6px;
+ }
+.icon-link img{
+border-radius: 20px;
+width: 60px;
+    height: 60px;
+    margin: 124px;
+    transition: .4s;
+     
+       
+}
+
+.icon-link img:hover {
+    transform: scale(1.2);
+}
+
+
+
+.nav-link:hover{
+    color: rgb(12, 181, 20) !important;
+}
+
+
+.foto>img{
+    border-radius: 100rem;
+}
+
+
+.contact{
+    background-color: rgba(118, 119, 118, 0.298);
+}
+
+@media(max-width:780px){
+    .icon-link img {
+            border-radius: 20px;
+            width: 60px;
+            height: 60px;
+            margin: 20px;
+            transition: .4s;
+    }
+}
